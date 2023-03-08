@@ -1,0 +1,1 @@
+sudo npm uni -g initial-project

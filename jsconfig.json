@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@controls/*": [
+                "./src/controls/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+            "@hooks/*": [
+                "./src/hooks/*"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@constants/*": [
+                "./src/constants/*"
+            ],
+            "@data/*": [
+                "./src/data/*"
+            ],
+            "@mockData/*": [
+                "./src/mockData/*"
+            ],
+            "@redux/*": [
+                "./src/redux/*"
+            ]
+        },
+        "composite": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
