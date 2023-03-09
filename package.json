@@ -1,6 +1,6 @@
 {
   "name": "init-vite",
-  "version": "0.0.4",
+  "version": "0.1.4",
   "bin": {
     "init-vite": "./bin/generate.js"
   },
