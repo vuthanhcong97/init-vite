@@ -1,6 +1,6 @@
 {
   "name": "init-vite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "init-vite": "./bin/generate.js"
   },
@@ -30,6 +30,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "fs-extra": "^11.1.0",
     "jsdom": "^21.1.0",
+    "uni": "^0.0.6",
     "vite": "^4.1.0",
     "vitest": "^0.29.2"
   }

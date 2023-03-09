@@ -173,13 +173,11 @@ exec(
 													stdout,
 													stderr
 												) => {
-													console.log(
-														`Done. Now run:\n
-														cd test-vite-init\n
-														npm install\n
-														npm run dev\n
-														Happy Coding!`
-													)
+													console.log("Done. Now run:")
+													console.log(`cd ${process.argv[2]}`)
+													console.log("npm i")
+													console.log("npm run dev")
+													console.log("Happy Coding!")
 												}
 											)
 										})
