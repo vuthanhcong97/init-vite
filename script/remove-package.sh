@@ -1,1 +1,1 @@
-sudo npm uni -g initial-project
+sudo npm uni -g init-vite

@@ -1,1 +1,1 @@
-sudo npm i -g .
+sudo npm i -g ..
