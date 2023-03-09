@@ -178,7 +178,6 @@ exec(
 														cd test-vite-init\n
 														npm install\n
 														npm run dev\n
-														Your project is now started into ${process.argv[2]} folder, refer to the README for the project structure.\n
 														Happy Coding!`
 													)
 												}
