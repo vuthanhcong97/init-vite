@@ -1,5 +1,5 @@
 {
-  "name": "vite-react",
+  "name": "init-vite",
   "version": "0.0.1",
   "bin": {
     "init-vite": "./bin/generate.js"
