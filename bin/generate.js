@@ -48,7 +48,7 @@ exec(
 			).join(" ")}`
 		)
 		exec(
-			`cd ${process.argv[2]} && npm i ${listAddDependencies} && npm i -D ${listAddDevDependencies}`,
+			`cd ${process.argv[2]} && npm i && npm i ${listAddDependencies} && npm i -D ${listAddDevDependencies}`,
 			(initErr, initStdout, initStderr) => {
 				if (initErr) {
 					console.error(
