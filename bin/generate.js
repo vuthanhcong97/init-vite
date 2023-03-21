@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const fs = require("fs-extra")
+const fs = require("fs")
 const path = require("path")
 const https = require("https")
 const { exec } = require("child_process")
@@ -158,14 +158,22 @@ exec(
 												throw err
 										}
 									)
-									fs.copy(
+									fs.cp(
 										path.join(
 											__dirname,
 											"../src"
 										),
-										`${process.argv[2]}/src`
-									)
-										.then(() => {
+										`${process.argv[2]}/src`,
+										{ recursive: true },
+										(err) => {
+											if(err) {
+												console.error(
+													`cannot copy src:
+													${initErr}`
+												)
+												return
+											}
+
 											exec(
 												`cd ${process.argv[2]} && git add . && git commit -m "initial project"`,
 												(
@@ -180,12 +188,8 @@ exec(
 													console.log("Happy Coding!")
 												}
 											)
-										})
-										.catch((err) =>
-											console.error(
-												err
-											)
-										)
+										}
+									)
 								})
 							}
 						)
