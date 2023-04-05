@@ -12,7 +12,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -28,8 +29,14 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "husky": "^8.0.3",
     "jsdom": "^21.1.0",
+    "lint-staged": "^13.2.0",
+    "prettier": "2.8.7",
     "vite": "^4.1.0",
     "vitest": "^0.29.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
